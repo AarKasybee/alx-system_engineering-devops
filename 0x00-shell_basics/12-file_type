@@ -1,2 +1,2 @@
 #!/bin/bash
-readelf -a /tmp/iamafile
+readelf /tmp/iamafile
