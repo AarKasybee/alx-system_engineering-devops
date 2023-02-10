@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo chgrp -h staff _hello -m sudo chown -h vincent _hello
+sudo {chown -h vincent _hello ; chgrp -h staff _hello}
