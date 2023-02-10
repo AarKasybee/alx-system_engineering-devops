@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -pamv
+ls -a | awk 'BEGIN{ ORS=","; } /^\./{ print; next; } /\/$/{ print $0","; next; } { print $0","; } END{ print "\n"; }'
