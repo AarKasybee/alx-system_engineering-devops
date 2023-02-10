@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo chmod -R +x ./*/
+find . -type d -exec chmod u+x g+x o+x {} +
