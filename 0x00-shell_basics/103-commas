@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -pamv
+ls -m -p -a -v
