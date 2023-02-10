@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -type d -exec chmod u+755 g+755 o+755
+find . -type d -exec chmod u+755 g+755 o+755 {} +
