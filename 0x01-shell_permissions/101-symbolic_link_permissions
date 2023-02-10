@@ -1,2 +1,2 @@
 #!/bin/bash
-ln -s sudo chown vincent _hello + chgrp staff _hello
+ln -s sudo chown vincent _hello + chgrp staff _hello _hello
