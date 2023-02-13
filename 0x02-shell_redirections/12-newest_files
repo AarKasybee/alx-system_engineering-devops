@@ -1,0 +1,2 @@
+#!/bin/bash
+ls -lt | sort -k6,7| head -n 10
