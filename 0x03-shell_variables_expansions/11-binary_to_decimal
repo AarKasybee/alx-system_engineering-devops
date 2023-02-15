@@ -1,2 +1,2 @@
 #!/bin/bash
-bc
+printf "%d\n" 0b1010
