@@ -1,2 +1,2 @@
 #!/bin/bash
-printf "%d\n" 0b1010
+printf "%d" $BINARY
