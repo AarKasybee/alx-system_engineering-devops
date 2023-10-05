@@ -1,8 +1,8 @@
 #!/usr/bin/bash
-if [ $# -eq 0 ]; then
+if [ $# -eq 0 ]
+then
 	echo "Usage: 5-is_the_host_on_the_network {IP_ADDRESS}"
-    	exit 1
 else
 	ip_address="$1"
-	ping -c 5 -W 1 "$ip_address" > /dev/null
+	ping -c 5 -W 2 "$ip_address"
 fi
