@@ -1,0 +1,5 @@
+#!/usr/bin/bash
+# Displays listening ports. Includes listening sockets as well
+netstat -tuln | grep 'LISTEN' > /tmp/listen_ports.tmp
+
+# + as the PID and name of the program to which each socket belongs.
