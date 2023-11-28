@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+# installs nginx and configures it on a remote server
+
+# Update the package lists
+apt-get -y update
+
+# Install the Nginx package
+apt-get -y install nginx
+
+# Allow incoming traffic to the Nginx HTTP port (port 80) using ufw
+ufw allow 'Nginx HTTP'
+
+# Create a simple "Hello World!" HTML file and place it in the default Nginx web root directory
+echo 'Hello World!' > /var/www/html/index.nginx-debian.html
+
+# Start the Nginx service
+service nginx start
+
