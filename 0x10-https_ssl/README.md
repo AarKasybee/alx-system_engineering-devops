@@ -1,8 +1,6 @@
 # HTTPS SSL
 
-In this project, I learned about the importance of HTTPS and how it works. I
-configured my HolbertonBnB web servers with `certbot` certificate and HAproxy
-SSL termination.
+Intro to HTTPS and SSL certification
 
 ## Tasks :page_with_curl:
 
