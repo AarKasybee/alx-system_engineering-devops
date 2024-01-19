@@ -1,0 +1,30 @@
+#!/usr/bin/env bash
+# Transfers a file from the alx client to another.
+# Accepts four arguments:
+#+    The path to the file to be transferred.
+#+    The IP of the server to transfer the file to.
+#+    The username that scp connects with.
+#+    The path to the SSH private key that scp uses.
+
+
+if [ "$#" -lt 4 ]; then
+    echo "Usage: $0 PATH_TO_FILE IP USERNAME PATH_TO_SSH_KEY"
+    exit 1
+fi
+
+file_to_transfer=$1
+server_ip=$2
+server_username=$3
+ssh_key=$4
+
+echo "Transferring $file_to_transfer to $server_username@$server_ip:~/"
+
+# Using scp to transfer the file with strict host key checking disabled
+scp -o StrictHostKeyChecking=no -i "$ssh_key" "$file_to_transfer" "$server_username@$server_ip":~/
+
+# Check if the scp command was successful
+if [ $? -eq 0 ]; then
+    echo "File transferred successfully!"
+else
+    echo "Error transferring file. Check your parameters and try again."
+fi
