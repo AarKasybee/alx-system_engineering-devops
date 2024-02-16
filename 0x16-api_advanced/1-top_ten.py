@@ -10,7 +10,7 @@ def top_ten(subreddit):
     import sys
 
     url = "https://www.reddit.com/r/{}/hot.json".format(subreddit)
-    headers = {'User-Agent': 'Mozilla/5.0'}
+    headers = {'User-Agent': 'Agent 1'}
     try:
         response = requests.get(url, headers=headers,
                                 allow_redirects=False)
