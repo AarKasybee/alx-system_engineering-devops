@@ -1,16 +1,12 @@
 #!/usr/bin/python3
+"""Function to query subscribers on a given Reddit subreddit."""
+
 import requests
-def number_of_subscribers(subreddit)
-  """
-  This function retrieves the subscriber count for a subreddit using the JSON API.
 
-  Args:
-    subreddit: The name of the subreddit to query.
+def number_of_subscribers(subreddit):
+    """Return the total number of subscribers on a given subreddit."""
 
-  Returns:
-    The number of subscribers for the subreddit, or 0 if an error occurs.
-  """
-  url = "https://www.reddit.com/r/{}/about.json".format(subreddit)
+    url = "https://www.reddit.com/r/{}/about.json".format(subreddit)
     headers = {
         "User-Agent": "linux:0x16.api.advanced:v1.0.0 (by /u/bdov_)"
     }
