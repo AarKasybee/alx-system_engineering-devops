@@ -1,17 +1,20 @@
-Incident Postmortem for a Self-service internet cafe
+<h1>Incident Postmortem for a Self-service internet cafe</h1>
 
-Brief background
-A small internet cafe is designed to be self-serving to its customers. Customers can go to the internet cafe and connect to the Wi-Fi network of the internet cafe. The internet cafe is run on a network of interconnected routers to provide fast internet. When a customer connects, the system will prompt open a web page on their laptop or smartphone where they will define a session, duration of that session and will be prompted to make a payment before they can start using the internet. A possible incident would be a traffic overload that leads to a disruption in service, thus causing user/client frustration. Here is a postmortem of such an incident.
+<h2>Brief background</h2>
+<p>A small internet cafe is designed to be self-serving to its customers. Customers can go to the internet cafe and connect to the Wi-Fi network of the internet cafe. The internet cafe is run on a network of interconnected routers to provide fast internet. When a customer connects, the system will prompt open a web page on their laptop or smartphone where they will define a session, duration of that session and will be prompted to make a payment before they can start using the internet. A possible incident would be a traffic overload that leads to a disruption in service, thus causing user/client frustration. Here is a postmortem of such an incident.</p>
 
-Postmortem
+<h3><b>Postmortem</b></h3>
 
-Issue Summary: Unforeseen surge in user traffic leading to Wi-Fi network overload and service disruption.
-•	Duration: 10 minutes
-•	Start time: 10:30am CAT
-•	End time: 10:40am CAT
-•	Impact: Loss of internet service for all users leading to User frustration, lost revenue, and potential damage to the café's reputation
-•	Root cause: Surge in internet user traffic due to a newly launched online game overloaded the router capacities causing a network infrastructure failure.
-
+<p>
+<b>Issue Summary: Unforeseen surge in user traffic leading to Wi-Fi network overload and service disruption.</b>
+<ul>
+<li>Duration: 10 minutes</li>
+<li>Start time: 10:30am CAT</li>
+<li>End time: 10:40am CAT</li>
+<li>Impact: Loss of internet service for all users leading to User frustration, lost revenue, and potential damage to the café's reputation</li>
+<li>Root cause: Surge in internet user traffic due to a newly launched online game overloaded the router capacities causing a network infrastructure failure.</li>
+</ul>
+</p>
 Timeline
 •	The issue was detected at 10:31am CAT
 •	I was the on-call engineer and Ireceived an SMS alert on my phone from the pagerduty system and confirmation of the system being down was received from our clients in form of complaints
