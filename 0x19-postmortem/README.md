@@ -46,4 +46,6 @@ To prevent this from happening again, I looked int the following possible soluti
 <li>Partner with multiple internet service providers to ensure redundancy and failover options.</li>
 <li>Use routers with greater capacities.</li>
 </ul>
+The general approach to handling ssytem issues and ensuring they never repeat is by following this approach given by www.atlassian.com as shown in the following image.
+<img src="https://wac-cdn.atlassian.com/dam/jcr:77b7d90d-6b76-47f2-bc2a-f547f8a3eacb/IMMKT-153-illustration-for-postmortem-page.png?cdnVersion=1450" alt="Service life-cycle" width="500" height="600">
 </p>
