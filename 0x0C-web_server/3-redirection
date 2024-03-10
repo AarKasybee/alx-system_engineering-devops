@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Installs, configures, and starts the server
-apt-get update
+apt-get -y update
 apt-get -y install nginx
 sudo ufw allow 'Nginx HTTP'
 mkdir -p /var/www/html/
@@ -17,7 +17,7 @@ SERVER_CONFIG=\
 		try_files \$uri \$uri/ =404;
 	}
 	if (\$request_filename ~ redirect_me){
-		rewrite ^ https://sketchfab.com/bluepeno/models permanent;
+		rewrite ^ https://theteckbear.wixsite.com/website permanent;
 	}
 }"
 
