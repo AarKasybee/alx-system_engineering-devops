@@ -16,9 +16,10 @@ echo "
    balance roundrobin
    option httpclose
    option forwardfor
-   server 254256-web-01 54.159.25.153 check
-   server 254256-web-02 54.173.89.186 check
+   server 254256-web-01 54.236.25.49 check
+   server 254256-web-02 100.24.242.11 check
 " >> /etc/haproxy/haproxy.cfg
 
+sudo apt-get install --reinstall haproxy
 service haproxy start
 
