@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-# Connects to 254256-web-01 at ip 100.25.26.86 with key in ~/.ssh/school
+# Connects to 254256-web-01 at ip 54.146.66.111 with key in ~/.ssh/school
 
-ssh -i ~/.ssh/school ubuntu@100.25.26.86
+ssh -i ~/.ssh/school ubuntu@54.146.66.111
